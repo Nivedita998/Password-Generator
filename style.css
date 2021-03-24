@@ -1,0 +1,80 @@
+body {
+  background-color: #333;
+  color: white;
+  margin: 0;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: Georgia, "Times New Roman", Times, serif;
+}
+
+.container {
+  background-color: #006699;
+  padding: 3rem;
+  border: 2px solid black;
+  border-radius: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.form {
+  display: grid;
+  grid-template-columns: auto auto;
+  row-gap: 1rem;
+  column-gap: 3rem;
+  justify-content: center;
+  align-items: center;
+}
+
+.title {
+  margin: 0;
+  text-align: center;
+}
+
+label {
+  font-weight: bold;
+}
+
+.character-Amount-container {
+  display: flex;
+  align-items: center;
+}
+
+.number-input {
+  width: 2rem;
+}
+
+.password-display {
+  height: 2rem;
+  width: 350px;
+  border-radius: 0.5rem;
+  background-color: white;
+  color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
+  /* word wrap property is used to shift extra character in new line */
+  word-break: break-all;
+  border: 1px solid #333;
+}
+
+.btn {
+  /* "span 2" takes space of two columns */
+  grid-column: span 2;
+  background-color: transparent;
+  border: 2px solid white;
+  color: white;
+  /* .5 is for top bottom and 1 is for left right */
+  padding: 0.5rem 1rem;
+  font-weight: bold;
+  cursor: pointer;
+  border-radius: 1rem;
+}
+
+.btn:hover {
+  background-color: #ffffff33;
+}
